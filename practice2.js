@@ -1,3 +1,4 @@
+//practice1
 
 function error(value){
   console.log("error")
@@ -13,3 +14,22 @@ if(text.indexOf("#") !== -1 ){
 }
 
 message("  #hello Ahmad welcome  ", error);
+
+
+//practice2
+function corecct(value){
+     console.log("Successful");
+   }
+   function incorecct(value){
+     console.log("not Successful");
+   }
+   function userandpassword(name, password, callback1, callback2){
+     let result = name.trim() ;
+     console.log(result);
+     if(result === "sara" && password === 123){
+       callback1();
+     }else{
+       callback2();
+     }
+   }
+   userandpassword("  sara  ", 123, corecct,incorecct);
